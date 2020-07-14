@@ -75,6 +75,6 @@
     dest: '/home/vagrant'
 
 - name: run import script
-  command: /usr/bin/python ./main.py
+  command: /usr/bin/python3 ./main.py
   args:
     chdir: '/home/vagrant/Python/'

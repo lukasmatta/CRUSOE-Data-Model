@@ -1,5 +1,5 @@
-from neo4j.v1 import GraphDatabase, ServiceUnavailable
-from neo4j.exceptions import AuthError
+from neo4j import GraphDatabase
+from neo4j.exceptions import AuthError, ServiceUnavailable
 import sys
 
 

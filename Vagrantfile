@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
     config.vm.define "ares" do |ares|
         # Template for virtualbox to be used
-        ares.vm.box = "debian/jessie64"
+        ares.vm.box = "debian/buster64"
         # Check for updates regularly
         ares.vm.box_check_update = true
         # Domain
