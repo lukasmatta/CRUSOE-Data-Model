@@ -52,8 +52,10 @@
       name: neo4j=1:4.1.1
       state: present
 
-  - name: Set Java 11 as default
-    command: update-java-alternatives --set java-1.11.0-openjdk-amd64 
+  - name: Correct java version selected
+    alternatives:
+      name: java
+      path: /usr/lib/jvm/java-11-openjdk-amd64/bin/java 
 
   when: neo4j_installed.stat.exists == false 
 
